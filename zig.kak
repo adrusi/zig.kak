@@ -60,6 +60,9 @@ add-highlighter shared/zig/code regex @(setGlobalLinkage|setGlobalSection|shlExa
 add-highlighter shared/zig/code regex @(shlWithOverflow|shrExact|sizeOf|sqrt|subWithOverflow)\b 0:builtin
 add-highlighter shared/zig/code regex @(truncate|typeId|typeInfo|typeName|typeOf|atomicRmw)\b 0:builtin
 
+add-highlighter shared/zig/code regex ((\+|-|\*|<<)%?|/|=|\^|&|\?|\||!|>|<|%|>>)=? 0:operator
+add-highlighter shared/zig/code regex -> 0:operator
+
 # Commands
 
 define-command -hidden zig-filter-around-selections %{
