@@ -1,0 +1,8 @@
+= zig.kak
+
+zig.kak provides language support for https://ziglang.org/[Zig] in
+http://kakoune.org/[Kakoune].
+
+== Installation
+
+Add `zig.kak` to your autoload directory (`~/.config/kak/autoload`).
