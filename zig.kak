@@ -33,7 +33,7 @@ add-highlighter shared/zig/code/ regex \b(while|for)\b 0:keyword
 add-highlighter shared/zig/code/ regex \b(fn|use|test)\b 0:keyword
 
 add-highlighter shared/zig/code/ regex \b(bool|f32|f64|f128|void|noreturn|type|error|promise)\b 0:type
-add-highlighter shared/zig/code/ regex \b(i2|u2|i3|u3|i4|u4|i5|u5|i6|u6|i7|u7|i8|u8|i16|u16|i29|u29|i32|u32|i64|u64|i128|u128|isize|usize)\b 0:type
+add-highlighter shared/zig/code/ regex \b(u\d+|i\d+|isize|usize)\b 0:type
 add-highlighter shared/zig/code/ regex \b(c_short|c_ushort|c_int|c_uint|c_long|c_ulong|c_longlong|c_ulonglong|c_longdouble|c_void)\b 0:type
 
 add-highlighter shared/zig/code/ regex \b(null|undefined|this)\b 0:variable
