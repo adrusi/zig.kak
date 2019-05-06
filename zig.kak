@@ -10,7 +10,7 @@ add-highlighter shared/zig regions
 add-highlighter shared/zig/code default-region group
 add-highlighter shared/zig/string   region c?"       (?<!\\)(?:\\\\)*" group
 add-highlighter shared/zig/mlstring region %{c?\\\\} $                 fill string
-add-highlighter shared/zig/char     region b?'       (?<!\\)'          group
+add-highlighter shared/zig/char     region c?'       (?<!\\)(?:\\\\)*' group
 add-highlighter shared/zig/comment  region //        $                 fill comment
 
 add-highlighter shared/zig/string/   fill string
@@ -27,7 +27,7 @@ KAK
 
 add-highlighter shared/zig/code/ regex \b(const|var|extern|packed|export|pub|noalias|inline|comptime|nakedcc|stdcallcc|volatile|align|section)\b 0:keyword
 add-highlighter shared/zig/code/ regex \b(struct|enum|union)\b 0:keyword
-add-highlighter shared/zig/code/ regex \b(break|return|continue|asm|defer|errdefer|unreachable|try|catch|async|await|suspend|resume|cancel)\b 0:keyword
+add-highlighter shared/zig/code/ regex \b(break|return|continue|asm|defer|errdefer|unreachable|try|catch|orelse|async|await|suspend|resume|cancel)\b 0:keyword
 add-highlighter shared/zig/code/ regex \b(if|else|switch|and|or)\b 0:keyword
 add-highlighter shared/zig/code/ regex \b(while|for)\b 0:keyword
 add-highlighter shared/zig/code/ regex \b(fn|use|test)\b 0:keyword
